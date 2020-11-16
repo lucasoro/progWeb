@@ -1,0 +1,197 @@
+/* Cores
+
+#c3c3c3 -> cinza
+#00346a -> azul
+#001756 - azul escuro
+
+*/
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ------------------------------------------ */
+
+.divCabecalho {
+    width: 100%;
+    padding-top: 0.5%;
+    height: 4%;
+    background-color: #00346a;
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+
+/* ------------------------------------------ */
+
+.divMenu {
+    background-color: #c3c3c3;
+    padding-top: 30px;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    width: 100%;
+    height: 60px;
+}
+
+.divMenu img {
+    width: 120px;
+    height: 30px;
+    margin-left: 30px;
+}
+
+.divBotoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divCarrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divCarrinho img {
+    margin: 0px;
+    width: 20px;
+    height: 20px;
+}
+
+.botoes {
+    background-color: #00346a;
+    color: #c3c3c3;
+    border: none;
+    padding: 5px 10px;
+    margin: 0px 10px;
+    font-size: large;
+    border-radius: 10px;
+}
+
+.divMenu table {
+    width: 100%;
+}
+
+.divMenu td {
+    width: 33%;
+    display: inline-block;
+}
+
+
+/* ------------------------------------------ */
+
+.divPrincipal {
+    width: 100%;
+    height: 85%;
+    text-align: center;
+    background-image: url('../images/background.jpeg');
+}
+
+.divMensagemCativante {
+    width: 20%;
+    margin-top: 10%;
+    margin-left: 40%;
+    height: 10%;
+    border-radius: 10px;
+    position: absolute;
+    background-color: #c3c3c3;
+    opacity: 80%;
+}
+
+.divMensagemCativante p {
+    vertical-align: middle;
+    color: #00346a;
+}
+
+#botaoCadastrar {
+    width: 10%;
+    height: 10%;
+    margin-top: 25%;
+    background-color: #c3c3c3;
+    color: #00346a;
+}
+
+
+/* ------------------------------------------ */
+
+.divProdutos {
+    background-image: url('../images/backgroundCinza.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: -15px;
+    background-color: #c3c3c3;
+}
+
+.divProdutos table {
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+#divTitulo {
+    border-top: 5px solid white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00346a;
+    padding: 20px;
+    border-bottom: 5px solid white;
+    background-color: #c3c3c3;
+}
+
+.produtos {
+    background-color: #00346a;
+    border-radius: 10px;
+}
+
+.produtos img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+
+/* ------------------------------------------ */
+
+.divVideo {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+/* ------------------------------------------ */
+
+.divDepoimento {
+    width: 100%;
+    height: 45%;
+    text-align: center;
+}
+
+
+/* ------------------------------------------ */
+
+.divContato {
+    width: 100%;
+    height: 45%;
+    text-align: center;
+}
+
+
+/* ------------------------------------------ */
+
+.divRodape {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+
+
+/* ------------------------------------------ */
