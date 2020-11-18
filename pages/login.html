@@ -1,6 +1,8 @@
 <html>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="../styles/estilo.css">
+<script src="../js/jquery.js"></script>
+<script src="../js/scripts.js"></script>
 
 <head>
     <title>Login</title>
@@ -13,7 +15,7 @@
     <div class="divMenu">
         <table>
             <tr>
-                <td><img src="../images/logo.png"></td>
+                <td><button id='logo_home'><img src="../images/logo.png"></button></td>
                 <td>
                     <div class="divBotoes">
                         <button class='botoes'>PRODUTOS</button>
@@ -22,7 +24,7 @@
                 </td>
                 <td>
                     <div class="divCarrinho">
-                        <button class="botoes">
+                        <button class="botoes userPageButton">
 							<img src="../images/user.png"></button>
                         <button class="botoes">
 							<img src="../images/cart.png"></button>
@@ -32,10 +34,13 @@
                 </td>
             </tr>
         </table>
+
     </div>
     <div class="divLogin">
-        <input type="text" placeholder="login"><br>
-        <input type="password" placeholder="senha"><br><br>
+        <input class='loginInput' type="text" placeholder="login"><br>
+        <input class='loginInput' type="password" placeholder="senha"><br>
+        <button class="botoes" id="login">Login</button>
+        <br><br>
         <a href="register.html">Registre-se</a>
     </div>
 </body>

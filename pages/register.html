@@ -1,6 +1,8 @@
 <html>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="../styles/estilo.css">
+<script src="../js/jquery.js"></script>
+<script src="../js/scripts.js"></script>
 
 <head>
     <title>Login</title>
@@ -13,7 +15,7 @@
     <div class="divMenu">
         <table>
             <tr>
-                <td><img src="../images/logo.png"></td>
+                <td><button id='logo_home'><img src="../images/logo.png"></button></td>
                 <td>
                     <div class="divBotoes">
                         <button class='botoes'>PRODUTOS</button>
@@ -22,8 +24,8 @@
                 </td>
                 <td>
                     <div class="divCarrinho">
-                        <button class="botoes">
-							<img src="../images/user.png"></button>
+                        <button class="botoes userPageButton">
+							<img src="../images/user.png "></button>
                         <button class="botoes">
 							<img src="../images/cart.png"></button>
                         <button class="botoes">
@@ -32,28 +34,29 @@
                 </td>
             </tr>
         </table>
+
     </div>
     <div class="divRegistro">
         <table id='tabelaRegistro'>
             <tr>
                 <td>
-                    <input type="text" placeholder="Nome">
+                    <input class='inputRegistro' type="text" placeholder="Nome">
                 </td>
                 <td>
-                    <input type="text" placeholder="Sobrenome">
+                    <input class='inputRegistro' type="text" placeholder="Sobrenome">
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
-                    <input type="text" placeholder="Email">
+                    <input class='inputRegistro' type="text" placeholder="Email">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="text" placeholder="Senha">
+                    <input class='inputRegistro' type="text" placeholder="Senha">
                 </td>
                 <td>
-                    <input type="text" placeholder="Repita a senha">
+                    <input class='inputRegistro' type="text" placeholder="Repita a senha">
                 </td>
             </tr>
             <tr>
