@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    var logins = [];
-    var logado = 0;
+
+    localStorage.setItem('lucas', 'oro');
 
     $("#logo_home").click(function() {
         window.location.href = '/progWeb/index.html';
@@ -12,22 +12,32 @@ $(document).ready(function() {
         for (let i = 0; i < arr.length; i++) {
             credenciais.push(arr[i].value);
         }
-        logins.forEach(function(item) {
-            item[0] === credenciais[0] && item[1] === credenciais[1] ? logado > 0 : {}
-        })
-        logado > 0 ? window.location.href = '/progWeb/index.html' : alert("Erro! Tente novamente.");
+        let local = localStorage.getItem('logins');
+        console.log(local[0])
+        for (let i = 0; i < local.length; i++) {
+            local[0] === credenciais[0] && local[1] === credenciais[1] ? localStorage.setItem('logado', '1') : {}
+        }
+
+        localStorage.getItem('logado') === '1' ? window.location.href = '/progWeb/index.html' : alert("Erro! Tente novamente.");
     })
 
     $("#botaoRegistro").click(function() {
         let lista = document.getElementsByClassName('inputRegistro');
-        console.log(lista);
-        lista[3].value === lista[4].value ? logins.push([lista[0].value, lista[3].value]) : alert("Senhas não batem!");
-        logado = 1;
-        window.location.href = '/progWeb/index.html';
+        if (lista[3].value === lista[4].value) {
+            localStorage.setItem(lista[0].value, lista[3].value);
+            localStorage.setItem('logado', '1');
+            window.location.href = '/progWeb/index.html';
+        } else {
+            alert("Senhas não batem!");
+        }
     })
 
     $(".userPageButton").click(function() {
-        window.location.href = '/progWeb/pages/login.html';
+        if (localStorage.getItem('logado') === '1') {
+            window.location.href = '/progWeb/index.html';
+        } else {
+            window.location.href = '/progWeb/pages/login.html';
+        }
     })
 
 })
