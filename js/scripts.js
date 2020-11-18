@@ -71,17 +71,29 @@ $(document).ready(function() {
     })
 
     $("#prod1").click(function() {
-        localStorage.setItem('prod1', '1');
-        alert('Produto adicionado!');
+        if (localStorage.getItem('logado') === '1') {
+            localStorage.setItem('prod1', '1');
+            alert('Produto adicionado!');
+        } else {
+            alert("Realize o login primeiro!");
+        }
     })
 
     $("#prod2").click(function() {
-        localStorage.setItem('prod2', '1');
-        alert('Produto adicionado!');
+        if (localStorage.getItem('logado') === '1') {
+            localStorage.setItem('prod2', '1');
+            alert('Produto adicionado!');
+        } else {
+            alert("Realize o login primeiro!");
+        }
     })
 
     $("#prod3").click(function() {
-        localStorage.setItem('prod3', '1');
-        alert('Produto adicionado!');
+        if (localStorage.getItem('logado') === '1') {
+            localStorage.setItem('prod3', '1');
+            alert('Produto adicionado!');
+        } else {
+            alert("Realize o login primeiro!");
+        }
     })
 })
