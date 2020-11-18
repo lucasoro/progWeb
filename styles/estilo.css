@@ -200,7 +200,7 @@ body {
 
 .divDepoimentos {
     width: 100%;
-    height: 60%;
+    height: 45%;
     text-align: center;
     background-image: url('../images/backgroundCinza.jpg');
     background-repeat: no-repeat;
@@ -407,4 +407,27 @@ body {
 
 #concluir:hover {
     cursor: pointer;
+}
+
+#map {
+    height: 60%;
+    width: 100%;
+}
+
+.divMapa {
+    text-align: center;
+}
+
+#tituloDif {
+    border-top: 0px;
+    border-bottom: 5px solid white;
+}
+
+#infosContato {
+    background-color: #00346a;
+    padding: 2%;
+    color: #c3c3c3;
+    margin-bottom: 5px;
+    font-size: 40px;
+    font-family: monospace;
 }
