@@ -258,6 +258,10 @@ body {
 /* ------------------------------------------ */
 
 .divLogin {
+    background-image: url('../images/backgroundCinza.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55%;
     padding-top: 10%;
     text-align: center;
 }
