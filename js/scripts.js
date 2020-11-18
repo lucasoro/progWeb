@@ -96,4 +96,23 @@ $(document).ready(function() {
             alert("Realize o login primeiro!");
         }
     })
+
+    $(".searchPageButton").click(function() {
+        $(".searchBoxDiv").css("opacity", "1");
+        localStorage.setItem("search", '1');
+    })
 })
+
+$(document).keyup(function(event) {
+    let arr = ['book', 'album', 'banner', 'cartao', 'festa']
+    let det = 0;
+    if (localStorage.getItem('search') === '1') {
+        if (event.which === 13) {
+            for (let i = 0; i < arr.length; i++) {
+                arr[i] === $("#searchBox").val() ? det = 1 : {}
+            }
+            det ? alert("Temos o produto!") : alert("Não temos o produto!");
+        }
+    }
+
+});

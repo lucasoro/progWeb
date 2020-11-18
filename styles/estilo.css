@@ -453,3 +453,18 @@ body {
 #p2 {
     float: right;
 }
+
+.searchBoxDiv {
+    margin-left: 30%;
+    opacity: 0;
+    background-color: white;
+    width: 40%;
+    height: 24px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+#searchBox {
+    border-radius: 10px;
+    width: 100%;
+}
