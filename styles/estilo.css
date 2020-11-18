@@ -431,3 +431,25 @@ body {
     font-size: 40px;
     font-family: monospace;
 }
+
+.divTexto {
+    padding: 2%;
+    text-align: center;
+    background-image: url('../images/backgroundCinza.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70%;
+}
+
+.divTexto p {
+    padding: 20px;
+    font-size: 30px;
+    background-color: #00346a;
+    color: #c3c3c3;
+    border-radius: 10px;
+    width: 70%;
+}
+
+#p2 {
+    float: right;
+}
