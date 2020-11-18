@@ -319,3 +319,77 @@ body {
 #botaoRegistro:hover {
     cursor: pointer;
 }
+
+
+/* ------------------------------------------ */
+
+.divCart {
+    height: 75%;
+    width: 100%;
+    background-image: url('../images/backgroundCinza.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* ------------------------------------------ */
+
+.divProd {
+    padding-top: 10%;
+    text-align: center;
+    height: 75%;
+    width: 100%;
+    background-image: url('../images/backgroundCinza.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.divProd img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.divProd button {
+    border: none;
+    width: 300px;
+    padding: 0px;
+    border-radius: 10px;
+    margin: 1%;
+}
+
+.divProd button:hover {
+    cursor: pointer;
+}
+
+.divLegendaProd {
+    position: absolute;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
+    transition: 500ms;
+    font-size: 40px;
+}
+
+.divLegendaProd:hover {
+    transition: 500ms;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.divCart {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.divCart img {
+    border: 3px solid #c3c3c3;
+    width: 20%;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.divCart button {
+    position: absolute;
+}
