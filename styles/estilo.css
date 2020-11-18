@@ -315,3 +315,7 @@ body {
     font-size: large;
     border-radius: 10px;
 }
+
+#botaoRegistro:hover {
+    cursor: pointer;
+}

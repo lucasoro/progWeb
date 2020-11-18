@@ -3,6 +3,7 @@ $(document).ready(function() {
     localStorage.setItem('lucas', 'oro');
 
     $("#logo_home").click(function() {
+        localStorage.setItem('logado', '0');
         window.location.href = '/progWeb/index.html';
     })
 
@@ -12,13 +13,16 @@ $(document).ready(function() {
         for (let i = 0; i < arr.length; i++) {
             credenciais.push(arr[i].value);
         }
-        let local = localStorage.getItem('logins');
-        console.log(local[0])
-        for (let i = 0; i < local.length; i++) {
-            local[0] === credenciais[0] && local[1] === credenciais[1] ? localStorage.setItem('logado', '1') : {}
+        if (credenciais[0] in localStorage) {
+            if (localStorage.getItem(credenciais[0]) === credenciais[1]) {
+                localStorage.setItem('logado', '1');
+            } else {
+                alert("Senha incorreta!");
+            }
+        } else {
+            alert("Usuário não reconhecido!");
         }
-
-        localStorage.getItem('logado') === '1' ? window.location.href = '/progWeb/index.html' : alert("Erro! Tente novamente.");
+        localStorage.getItem('logado') === '1' ? window.location.href = '/progWeb/index.html' : {};
     })
 
     $("#botaoRegistro").click(function() {
@@ -39,5 +43,4 @@ $(document).ready(function() {
             window.location.href = '/progWeb/pages/login.html';
         }
     })
-
 })
